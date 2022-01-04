@@ -60,7 +60,8 @@ const server = new ApolloServer({
   typeDefs,
   mocks: true,
   resolvers,
-  playground: true // enable GraphQL Playground IDE on prod env
+  playground: true, // enable GraphQL Playground IDE on prod env
+  introspection: true
 });
 
 exports.handler = server.createHandler(); // Don't forget to add 
