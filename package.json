@@ -1,21 +1,18 @@
 {
   "name": "firefox-design-systems-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Firefox Design Systems API",
   "scripts": {
-    "start": "nodemon",
-    "bundle": "cpx src/**/* functions/bundle"
+    "start": "netlify-lambda serve src",
+    "build": "netlify-lambda build src"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "apollo-server": "^3.6.1",
-    "apollo-server-lambda": "^3.6.1"
+    "apollo-server-lambda": "^2.22.1",
+    "graphql": "^15.5.0"
   },
   "devDependencies": {
-    "cpx": "^1.5.0",
-    "nodemon": "^2.0.15"
+    "encoding": "^0.1.13",
+    "netlify-cli": "^3.13.7",
+    "netlify-lambda": "^2.0.15"
   }
 }
