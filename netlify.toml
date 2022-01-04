@@ -2,3 +2,7 @@
   command = "yarn build"
   functions = "functions"
   publish = "static"
+
+[[redirects]]
+  from = "/"
+  to = "/.netlify/functions/graphql"
