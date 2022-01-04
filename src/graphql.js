@@ -58,7 +58,6 @@ const resolvers = {
 
 const server = new ApolloServer({
   typeDefs,
-  mocks: true,
   resolvers,
   playground: true, // enable GraphQL Playground IDE on prod env
   introspection: true
