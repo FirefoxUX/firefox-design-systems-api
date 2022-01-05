@@ -10,4 +10,5 @@
 [[headers]]
   for = "/*"
   [headers.value]
-    Access-Control-Allow-Origin = "*"
+    Access-Control-Allow-Origin: https://studio.apollographql.com
+    Access-Control-Allow-Credentials: true
