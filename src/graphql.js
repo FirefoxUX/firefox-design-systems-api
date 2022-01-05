@@ -59,6 +59,10 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
+  cors: {
+    origin: '*',
+    credentials: true
+  },
   playground: true, // enable GraphQL Playground IDE on prod env
   introspection: true
 });
