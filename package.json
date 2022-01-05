@@ -7,6 +7,7 @@
     "build": "netlify-lambda build src"
   },
   "dependencies": {
+    "apollo": "^2.33.9",
     "apollo-server-express": "^3.6.1",
     "apollo-server-lambda": "^2.22.1",
     "dotenv": "^10.0.0",
