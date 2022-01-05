@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { ApolloServer, gql } from "apollo-server-lambda";
 
 const typeDefs = gql`
